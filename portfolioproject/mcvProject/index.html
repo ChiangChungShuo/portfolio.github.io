@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高端疫苗</title>
+    <meta name="description"
+    content="此網站介紹高端疫苗所有發展歷史">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./img/mvc.jfif">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2019',  1000,      40000],
+          ['2020',  1170,      46000],
+          ['2021',  660,       112000],
+          ['2022',  1030,      540000]
+        ]);
+
+        var options = {
+          title: '確診人數',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+    <link rel="stylesheet" href="./taiwan/twicon.css">
+    <!--標題-->
+</head>
+<body>
+    <header>
+    <h1 class="title"><i class="twicon-main-island"></i>高端疫苗發展歷史</h1>
+    <h3 class="samll">過去20年高端疫苗發展歷史及相關研究</h3>
+</header>
+    <!--標題-->
+<nav>
+    <ul>
+        <li><a href="#"><i class="twicon-couplets"></i> 首頁</a></li>
+        <li><a href="./second.html"><i class="twicon-l-nh-insurance"></i> 關於高端</a></li>
+        <li><a href="./third.html"><i class="twicon-tapioca"></i> 產品研發</a></li>
+        <li><a href="./four.html"><i class="twicon-beer"></i> 最新消息</a></li>
+        <li><a href="./fifth.html"><i class="twicon-l-youbike"></i> 聯絡我們</a></li>
+    </ul>
+</nav>
+<!--內容-->
+<main>
+    <section class="left">
+        <p>高端疫苗是專注於疫苗及生物製劑開發與量產的生技新藥公司。我們具有PIC/S GMP認證的細胞培養商業量產能力，聚焦於全球及區域傳染性疾病，透過國際聯盟合作，開發新穎疫苗及可負擔生物相似藥。
+
+            我們以台灣做為基地，將全民的健康需求放在第一優先開發標的。
+            <br>
+            高端疫苗成立以來，致力於開發防治新興傳染病的對策，包括COVID-19新冠肺炎、腸病毒、登革熱及新型流感等疫苗。這些進展與成果都證明了我們的產品與技術具有巨大潛力。
+            <br>
+             我們相信，健康是基本人權，更是全球發展的基礎，疫苗和生物製劑是不可或缺的健康手段。我們將持續提供安全、有效及高品質的醫藥產品，成為亞太區域的研發和量產中心，將我們的產品推向世界，守護全體人類免於眾多疾病的威脅。
+        </p>     
+    <br>
+    <div id="curve_chart"></div>
+</section>
+    <section class="right">
+        <p>台北辦公室
+            114台北市內湖區內湖路一段120巷16號7樓
+            <br>7F., No. 16, Ln. 120, Sec. 1, Neihu Rd., Neihu Dist., Taipei City 114 , Taiwan (R.O.C.)
+        </p>
+        <br>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d231786.63158081955!2d120.76612983281248!3d24.806883900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346837081f478207%3A0xae438b724bbfcd73!2z6auY56uv55ar6IuX55Sf54mp6KO95YqR6IKh5Lu95pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1652110936675!5m2!1szh-TW!2stw" 
+       width="350" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+</main>
+</html>
